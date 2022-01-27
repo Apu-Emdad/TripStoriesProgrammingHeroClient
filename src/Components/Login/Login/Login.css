@@ -1,0 +1,16 @@
+.login-bg {
+  background-color: rgb(24, 49, 39);
+}
+.login-form form {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+.login-form form input,
+textarea {
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 10px;
+}

@@ -1,0 +1,19 @@
+.banner-image {
+  /* height: 60%; */
+}
+.banner-bg {
+  background-color: rgb(235, 198, 198);
+  padding: 20px 0px;
+}
+.top-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.top-line h1 {
+  color: red;
+}
+.top-line h4 {
+  color: rgb(41, 41, 116);
+}
