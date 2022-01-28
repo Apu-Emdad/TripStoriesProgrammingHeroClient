@@ -2,18 +2,17 @@
 
 BikersBD is a full stack website built with react, node and mongodb
 
-- Live Site (client) -https://bikersbd-f97ab.web.app/
-- Live Site (server) -https://serene-retreat-28688.herokuapp.com/services
+- Live Site (client) -https://festive-hodgkin-dfbcee.netlify.app/
 
 ## Features
 
-- Homr page have 6 items - header,banner,popular bikes,review, faq and footer
-- The purchase option is made in PrivateRoute
-- Both Email-Password and Google sign in was implemented
-- user car cancel order after logged in
-- user can add review which will appear at home page. He/She can give star rating also.
-- added one admin with the email address: dybala@gmail.com with password: 123456
+- Pagination used
+- Go to dashboard to add more blogs (both for user admin)
+- Both Email-Password and Google sign in was implemented. user must log in to see blog details
+- admin can delete blogs
+- users can revies
+- added one admin with the email address: test@test.com with password: #2021dev
 - the project is 100% responsive
-- on the Manage All Orders Admin can set the order status to 'shipped'
-- On Manage Products admin can delete product
-- On Add a product Admin can add product
+- The blogs posted by user must be approved by admin
+- The filters implements 2 types of comparison : domestic and international
+- Admin's activities are protected.
