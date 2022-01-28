@@ -10,6 +10,8 @@ const { HashLink } = require("react-router-hash-link");
 const Header = () => {
   const { user, logOut } = useAuth();
   const [name, setName] = useState("");
+
+  console.log(user);
   useEffect(() => {
     setName(user.displayName);
     console.log(user.displayName);

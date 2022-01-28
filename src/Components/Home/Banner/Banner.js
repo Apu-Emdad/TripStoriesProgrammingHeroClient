@@ -51,8 +51,8 @@ const Banner = () => {
       </Carousel>
       <div className="top-line col-md-6 gx-5 gy-2">
         <div>
-          <h1>BikersBD</h1>
-          <h4>Uplifting Communities By The Power of Two Wheels</h4>
+          <h1>TripStories</h1>
+          <h4>Uplifting Communities By The Power of tourism</h4>
         </div>
       </div>
     </div>

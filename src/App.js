@@ -11,7 +11,7 @@ import BlogDetail from "./Components/Home/BlogDetail/BlogDetail";
 import Login from "./Components/Login/Login/Login";
 import Notfound from "./Components/Notfound/Notfound";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
-import Purchase from "./Components/Purchase/Purchase";
+import Review from "./Components/Review/Review";
 import Register from "./Components/Register/Register";
 import Blogs from "./Components/Home/Blogs/Blogs";
 
@@ -29,9 +29,9 @@ function App() {
               <Home></Home>
             </Route>
 
-            <Route path="/blogs/:blogId">
+            <PrivateRoute path="/blogs/:blogId">
               <BlogDetail></BlogDetail>
-            </Route>
+            </PrivateRoute>
 
             <Route path="/register">
               <Register></Register>
@@ -40,9 +40,9 @@ function App() {
               <Login></Login>
             </Route>
             {/* private route  */}
-            <Route path="/purchase/:purchaseId">
-              <Purchase></Purchase>
-            </Route>
+            <PrivateRoute path="/review/:blogId">
+              <Review></Review>
+            </PrivateRoute>
             <PrivateRoute path="/dashboard">
               <Dashboard></Dashboard>
             </PrivateRoute>

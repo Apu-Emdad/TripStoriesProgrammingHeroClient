@@ -42,7 +42,7 @@ const BlogDetail = () => {
         <b>
           <i className="card-title">{name}</i>
         </b>
-        <p className="card-text">{description}</p>
+        <p className="card-text text-start">{description}</p>
         <p style={{ textAlign: "left" }}>
           <b>Total Cost: {cost}$</b>
         </p>
@@ -59,8 +59,8 @@ const BlogDetail = () => {
           className="text-warning d-block"
         ></Rating>
 
-        <Link to={`../purchase/${blogId}`}>
-          <button className="btn btn-danger">Purchase for {cost}</button>
+        <Link to={`../review/${blogId}`}>
+          <button className="btn btn-danger">give a review</button>
         </Link>
       </div>
       <div className="card-footer text-muted">Have a nice tour</div>

@@ -1,25 +1,28 @@
 import React, { useEffect, useState } from "react";
 import { Spinner } from "react-bootstrap";
-import { Link } from "react-router-dom";
+
 import Blog from "../Blog/Blog";
 import "./blogs.css";
 
 const Blogs = (props) => {
   const filter = props.filter;
+  const page = props.page;
+  const setPage = props.setPage;
 
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [page, setPage] = useState(0);
+  // const [page, setPage] = useState(0);
   const [pageCount, setPageCount] = useState(0);
-  const size = 3;
+  const size = 10;
   const fetchLink = `http://localhost:5000/blogs?page=${page}&&size=${size}&&filter=${filter}`;
   useEffect(() => {
     fetch(fetchLink)
       .then((res) => res.json())
       .then((data) => {
-        console.log(fetchLink);
+        // console.log(fetchLink);
         setBlogs(data.blogs);
         const count = data.count;
+        console.log(count);
         const pageNumber = Math.ceil(count / size);
         setPageCount(pageNumber);
       })

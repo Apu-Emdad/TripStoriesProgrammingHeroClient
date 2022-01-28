@@ -1,0 +1,19 @@
+.product-form {
+  text-align: center;
+}
+.product-form input {
+  display: block;
+  margin: 10px auto;
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid bisque;
+}
+.product-form textarea {
+  margin: 0px auto;
+  width: 50%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid bisque;
+}

@@ -12,7 +12,7 @@ const Blog = ({ blog }) => {
           <i>{name}</i>
           <p className="card-text">{description}</p>
           <Link to={`blogs/${_id}`}>
-            <button className="btn-danger">Purchase for</button>
+            <button className="btn-danger">Details</button>
           </Link>
         </div>
       </div>
