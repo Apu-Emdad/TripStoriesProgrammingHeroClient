@@ -16,3 +16,4 @@ BikersBD is a full stack website built with react, node and mongodb
 - The blogs posted by user must be approved by admin
 - The filters implements 2 types of comparison : domestic and international
 - Admin's activities are protected.
+- Users can post reviews and that is showed in blog detail
